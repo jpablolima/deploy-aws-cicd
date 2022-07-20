@@ -4,7 +4,7 @@ name: frontend
 on:
   push:
     branches:
-    - main
+    - homologacao
 
 jobs:
   deploy:
