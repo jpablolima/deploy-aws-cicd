@@ -5,7 +5,7 @@ on:
     branches:
       - "homologacao"
     path: 
-      - "python/app.py"
+      - "python"
 
 jobs:
   build:
@@ -23,4 +23,4 @@ jobs:
         run: python -m pip install --upgrade pip requests
 
       - name: Execute Python script 
-        run: python app.py
+        run: cd /python/ python app.py
