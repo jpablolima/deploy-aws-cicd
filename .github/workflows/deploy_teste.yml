@@ -3,8 +3,8 @@ name: Pyhton
 on:
   push:
     branches:
-      - "homologacao"
-    path: 
+      - "main"
+    paths: 
       - "python"
 
 jobs:
