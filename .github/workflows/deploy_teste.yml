@@ -1,4 +1,4 @@
-name: Pyhton
+name: Python
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
         run: python -m pip install --upgrade pip requests
 
       - name: Execute Python script 
-        run: python3 /python/app.py
+        run:  ./python/app.py
