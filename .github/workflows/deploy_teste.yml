@@ -13,10 +13,16 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v2 
+      - name: copiar arquivo
+        uses: canastro/copy-file-action@master
+        with:
+          source: "python/token.txt"
+          target: "token.txt"
       - name: diretório
         working-directory: ./python/
         run: |
           ls -la
+          
 
       - name: Setup Python Version
         uses: actions/setup-python@v2
