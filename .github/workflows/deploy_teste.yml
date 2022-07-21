@@ -16,8 +16,10 @@ jobs:
       - name: copiar arquivo
         uses: canastro/copy-file-action@master
         with:
-          source: "python/token.txt"
-          target: "token.txt"
+          source: "python/*"
+          target: "diretório"
+     
+
       - name: diretório
         working-directory: ./python/
         run: |
