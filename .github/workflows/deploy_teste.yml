@@ -13,15 +13,20 @@ jobs:
     steps:
       - name: Checkout repository content
         uses: actions/checkout@v2 
-        
-      - name: copiar arquivo
-        uses: appleboy/scp-action@master
-        # uses: canastro/copy-file-action@master
-        with:
-          source: "python/token.txt,python/token2.txt"
-          target: "diretorio"
-     
 
+      - name: copiar arquivo
+        uses: canastro/copy-file-action@master
+        with:
+          source: "python/token.txt"
+          target: "diretorio"
+
+      - name: copiar  arquivo2
+        uses: canastro/copy-file-action@master
+        with:
+          source: "python/token2.txt"
+          target: "arquivo"
+      
+     
       - name: diretório
         working-directory: ./python/
         run: |
